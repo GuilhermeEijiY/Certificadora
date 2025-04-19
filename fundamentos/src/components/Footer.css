@@ -1,0 +1,20 @@
+.home-footer {
+    width: 100vw;
+    padding: 2rem 1rem;
+    background-color: #222;
+    color: #eee;
+    font-size: 0.95rem;
+    border-top: 2px solid #444;
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-footer p {
+    margin: 0.4rem 0;
+    color: #ccc;
+  }
+  
