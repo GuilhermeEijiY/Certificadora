@@ -18,10 +18,10 @@ Desenvolver uma página web interativa voltada ao ensino dos fundamentos da prog
 
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5 / CSS3 / JavaScript ou qualquer outra, fica a critério da equipe
+- REACT
 - GitHub Pages
 - Trello (Kanban)
-- [opcional] Bootstrap ou Tailwind CSS
+
 
 ## 📅 Cronograma Simplificado
 
