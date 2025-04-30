@@ -1,68 +1,103 @@
-
 # 🧠 Fundamentos Interativos da Programação
 
-Projeto desenvolvido por Ghabriel Jun Aizawa, Guilherme Eiji Yoshida e Murillo Tadeu Amadeu, com o objetivo de criar uma página web interativa para ensinar fundamentos de programação de forma simples, prática e acessível.
+
+Projeto desenvolvido por **Ghabriel Jun Aizawa**, **Guilherme Eiji Yoshida** e **Murillo Tadeu Amadeu**, com o objetivo de criar uma página web interativa para ensinar fundamentos de programação de forma **simples**, **prática** e **acessível**.
+
+---
 
 ## 🚀 Objetivo
 
-Desenvolver uma página web interativa voltada ao ensino dos fundamentos da programação, com foco em iniciantes. O site terá exercícios práticos e conteúdos explicativos que ajudam os usuários a aprender fazendo, de forma intuitiva, acessível e visualmente agradável. A proposta é transformar conceitos básicos da programação — como variáveis, estruturas de decisão e repetição — em experiências dinâmicas, que estimulem a prática e o raciocínio lógico por meio da interação direta com o navegador.
+Criar uma plataforma interativa para iniciantes que desejam aprender os fundamentos da programação por meio de exercícios práticos e conteúdos explicativos, diretamente no navegador.
 
-## 📚 Conteúdo Abordado
+O projeto visa tornar o aprendizado mais envolvente e acessível, transformando conceitos como **variáveis**, **condições**, **laços de repetição** e **funções** em experiências dinâmicas e visuais.
 
-- Variáveis, constantes e expressões
-- Entrada e saída de dados
-- Estruturas condicionais
-- Estruturas de repetição
-- Funções simples
-- Vetores e matrizes (básico)
+---
 
-## 🛠️ Tecnologias Utilizadas
+## 📚 Conteúdos Abordados
 
-- REACT
-- GitHub Pages
-- Trello (Kanban)
+- ✅ Variáveis, constantes e expressões
+- ✅ Entrada e saída de dados
+- ✅ Estruturas condicionais (`if`, `else`)
+- ✅ Estruturas de repetição (`for`, `while`)
+- ✅ Funções básicas
+- ✅ Vetores e matrizes (nível introdutório)
 
+---
 
-## 📅 Cronograma Simplificado
+## 🖼️ Preview
 
-### 🟩 Sprint 1 – Planejamento & Setup (1 semana)
-- Definição do escopo
-- Criação do repositório GitHub
-- Escolha do template
-- Organização no Trello
+> *Em breve: captura de tela ou demonstração interativa do projeto.*
 
-### 🟨 Sprint 2 – Desenvolvimento do Site Base (1 semana)
-- Interface principal 
-- Seções: Início, Conteúdo e Equipe
+---
 
-### 🟦 Sprint 3 – Criação dos Exercícios (2 semanas)
-- Exercícios interativos com JavaScript
-- Integração ao site
+## 🛠️ Como Executar o Projeto
 
-### 🟥 Sprint 4 – Revisão e Ajustes (1 semana)
-- Testes e melhorias de layout
+1. **Clone o repositório:**
 
-### 🟪 Sprint 5 – Finalização e Publicação (1 semana)
-- Publicação via GitHub Pages
-- Apresentação final
+   ```bash
+   git clone https://github.com/seu-usuario/fundamentos-interativos.git
+   ```
 
-## 🌐 Estrutura da Página
+2. **Acesse a pasta do projeto:**
 
-### 🔹 Introdução
-- Escolher o nome do projeto
-- Objetivo
+   ```bash
+   cd fundamentos
+   ```
 
+3. **Instale as dependências:**
 
-### 🔸 Exercícios
-- Lista de tópicos com exercícios interativos
-- Modal com enunciado, campo de resposta e feedback
+   ```bash
+   npm install
+   ```
 
-### 🔹 Sobre a Equipe
-- Nome, foto/ícone e links para LinkedIn e GitHub
+4. **Execute o projeto:**
 
-## 🤝 Contribuições
+   ```bash
+   npm start
+   ```
 
-Sinta-se à vontade para abrir issues ou pull requests com sugestões e melhorias!
-Lembrando, sempre fazer o commit na Branch teste, não havendo erros fazer o merge!
+5. Acesse em: [http://localhost:3000](http://localhost:3000)
 
+---
 
+## 📦 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/)
+- [HTML5 + CSS3](https://developer.mozilla.org/pt-BR/)
+
+---
+
+## 💡 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se livre para abrir *issues*, sugerir melhorias ou enviar pull requests.
+
+1. Fork este repositório
+2. Crie sua branch com a melhoria:
+   ```bash
+   git checkout -b minha-melhoria
+   ```
+3. Commit suas alterações:
+   ```bash
+   git commit -m 'feat: minha melhoria'
+   ```
+4. Push para a branch:
+   ```bash
+   git push origin minha-melhoria
+   ```
+5. Abra um Pull Request 🙌
+
+---
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 👥 Autores
+
+- Ghabriel Jun Aizawa  
+- Guilherme Eiji Yoshida  
+- Murillo Tadeu Amadeu
