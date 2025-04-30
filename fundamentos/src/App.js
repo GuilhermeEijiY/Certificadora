@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Fundamentos from './pages/Fundamentos';
+import Exercicios from './pages/Exercicios';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
             <Route path='/Fundamentos' element={<Fundamentos/>}/>
+            <Route path='/Exercicios' element={<Exercicios/>}/>
         </Routes>
           <Footer />
       </BrowserRouter>
