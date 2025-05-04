@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
@@ -114,3 +120,43 @@ footer.footer {
   margin: 0.3rem 0;
   font-size: 0.95rem;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+.atividade {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+.check {
+  color: green;
+  font-weight: bold;
+}
+.cross {
+  color: red;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.section-planning {
+  margin-bottom: 40px; /* ou 3rem, ou 2em */
+}
+
+main.container {
+  flex: 1;
+}
+
