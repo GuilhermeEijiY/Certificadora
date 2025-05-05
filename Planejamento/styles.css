@@ -160,3 +160,57 @@ main.container {
   flex: 1;
 }
 
+.tabela-container {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.tabela-progresso {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-progresso th {
+  background-color: #8dc63f;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabela-progresso td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  vertical-align: top;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status span {
+  font-size: 0.9rem;
+}
+
+.status .pendente {
+  color: red;
+}
+
+.status .progresso {
+  color: blue;
+}
+
+.status .finalizado {
+  color: green;
+}
+
+.status input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-top: 4px;
+}
