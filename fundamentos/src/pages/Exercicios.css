@@ -1,11 +1,14 @@
 .ex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
+  min-height: calc(100vh - 100px); 
   margin: 2rem;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
+
 
 h1 {
   font-size: 2rem;
@@ -22,56 +25,55 @@ h1 {
 
 .card {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
-  margin-top: 20px;
+  max-width: 700px;
+  margin-top: 30px;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 25px;
   color: #007bff;
 }
 
 .pergunta {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 input {
-  padding: 10px;
+  padding: 14px;
   margin: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .buttons-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 15px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .button-action {
   background-color: #007bff;
   color: white;
-  padding: 12px 24px;
+  padding: 14px 0;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 5px;
-  min-width: 150px;
+  min-width: 180px;
 }
 
 .button-action:hover {
@@ -112,3 +114,4 @@ input {
   color: #333;
   text-align: center;
 }
+
