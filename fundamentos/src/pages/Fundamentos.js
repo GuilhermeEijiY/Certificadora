@@ -11,6 +11,9 @@ const Fundamentos = () => {
         <p>
           JavaScript é uma linguagem de programação interpretada, usada para tornar páginas web interativas. Com ele, é possível criar animações, validar formulários, manipular o DOM, e muito mais.
         </p>
+        <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -23,6 +26,9 @@ const Fundamentos = () => {
 const idade = 25;
 var cidade = "São Paulo";`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -34,6 +40,9 @@ var cidade = "São Paulo";`}
           <li>Array: lista de valores <code>[1, 2, 3]</code></li>
           <li>Object: estrutura com pares chave-valor</li>
         </ul>
+        <a href="https://www.w3schools.com/js/js_datatypes.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -43,6 +52,9 @@ var cidade = "São Paulo";`}
           <li>Comparação: <code>==</code>, <code>===</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code></li>
           <li>Lógicos: <code>&&</code>, <code>||</code>, <code>!</code></li>
         </ul>
+        <a href="https://www.w3schools.com/js/js_operators.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -54,6 +66,9 @@ var cidade = "São Paulo";`}
   console.log("Menor de idade");
 }`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -69,6 +84,9 @@ while (i < 5) {
   i++;
 }`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -81,6 +99,9 @@ while (i < 5) {
 const resultado = saudacao("Maria");
 console.log(resultado);`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -91,6 +112,9 @@ console.log(resultado);`}
         <pre>
 {`document.getElementById("meuElemento").innerText = "Texto alterado!";`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
 
       <section>
@@ -101,6 +125,9 @@ console.log(resultado);`}
   alert("Botão clicado!");
 });`}
         </pre>
+        <a href="https://www.w3schools.com/js/js_events.asp" target="_blank" rel="noopener noreferrer">
+          <button>Ver mais</button>
+        </a>
       </section>
     </div>
   );
