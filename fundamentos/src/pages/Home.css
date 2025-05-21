@@ -1,32 +1,19 @@
-/* Transição RGB no fundo */
-.rgb-background {
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
-  background-size: 400% 400%;
-  animation: rgbFlow 15s ease infinite;
-  min-height: 100vh;
-  padding: 2rem;
-  color: #222;
-}
 .home-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que ocupe no mínimo a altura total da tela */
+  min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
+  background-color: rgb(242, 245, 249); /* Fundo fixo que combina com o restante do app */
 }
 
-@keyframes rgbFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Video responsivo */
 .video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 960px; /* aumenta o tamanho máximo */
+  max-width: 960px;
   margin: 0 auto;
-  padding-bottom: 56.25%; /* proporção 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -41,8 +28,7 @@
   height: 100%;
 }
 
-
-/* Títulos e seções */
+/* Títulos e textos */
 .home-title {
   font-size: 2.5rem;
   text-align: center;
@@ -55,7 +41,8 @@
   text-align: center;
 }
 
-.home-description, .home-extra {
+.home-description,
+.home-extra {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -64,6 +51,7 @@
   margin-right: auto;
 }
 
+/* Botão principal */
 .study-button {
   background-color: #3f51b5;
   color: white;
@@ -81,6 +69,7 @@
   background-color: #303f9f;
 }
 
+/* Cards dos desenvolvedores */
 .dev-section {
   padding: 2rem 0;
 }
@@ -108,6 +97,7 @@
   object-fit: cover;
 }
 
+/* Call to Action */
 .cta-section {
   text-align: center;
   padding: 2rem 1rem;
