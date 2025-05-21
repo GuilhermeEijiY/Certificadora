@@ -90,7 +90,6 @@ const Exercicios = () => {
 
   const verificarResposta = () => {
     const correto = atual.validar(resposta);
-
     if (correto) {
       setFeedback('✅ Correto! Avançando para o próximo...');
       setAcertou(true);
@@ -130,7 +129,7 @@ const Exercicios = () => {
     return (
       <div className="ex-container">
         <h2>🎉 Parabéns!</h2>
-        <p>Você concluiu todos os 15 exercícios de lógica em JavaScript!</p>
+        <p>Você concluiu todos os {perguntas.length} exercícios de lógica em JavaScript!</p>
       </div>
     );
   }
@@ -139,9 +138,9 @@ const Exercicios = () => {
     <div className="ex-container">
       <h1>Desafio Lógica JavaScript</h1>
       <p className="intro-text">
-        Teste seus conhecimentos sobre lógica de programação em JavaScript com perguntas desafiadoras. 
-        Responda as perguntas e avance para o próximo desafio!
+        Teste seus conhecimentos com perguntas sobre lógica de programação em JavaScript.
       </p>
+
       <div className="card">
         <h2>Desafio {indice + 1} de {perguntas.length}</h2>
         <p className="pergunta">{atual.pergunta}</p>
@@ -151,13 +150,18 @@ const Exercicios = () => {
           placeholder="Digite sua resposta"
           value={resposta}
           onChange={(e) => setResposta(e.target.value)}
+          className="resposta-input"
         />
 
-        <div className="buttons-container">
-          <button onClick={verificarResposta} className="button-action">Verificar</button>
-          <button onClick={verRespostaCorreta} className="button-action">Ver Resposta Correta</button>
-          <button onClick={pularPergunta} className="button-action">Pular Pergunta</button>
-          <button onClick={voltarPergunta} className="button-action">Voltar Pergunta</button>
+        <div className="button-groups">
+          <div className="btn-row">
+            <button onClick={verificarResposta} className="button-action primary">Verificar</button>
+            <button onClick={verRespostaCorreta} className="button-action">Ver Resposta</button>
+          </div>
+          <div className="btn-row">
+            <button onClick={pularPergunta} className="button-action">Pular</button>
+            <button onClick={voltarPergunta} className="button-action">Voltar</button>
+          </div>
         </div>
 
         {feedback && (
@@ -168,7 +172,7 @@ const Exercicios = () => {
 
         {mostrarResposta && (
           <div className="resposta-correta">
-            <p><strong>Resposta Correta: </strong>{atual.respostaCorreta}</p>
+            <p><strong>Resposta Correta:</strong> {atual.respostaCorreta}</p>
           </div>
         )}
       </div>

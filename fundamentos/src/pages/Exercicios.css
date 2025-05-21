@@ -1,25 +1,20 @@
 .ex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  align-items: center;
-  min-height: calc(100vh - 100px); 
-  margin: 2rem;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
 }
 
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #007bff;
+  margin-bottom: 0.5rem;
 }
 
 .intro-text {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   color: #555;
 }
 
@@ -74,44 +69,80 @@ input {
   font-weight: bold;
   text-transform: uppercase;
   min-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.pergunta {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #222;
+}
+
+.resposta-input {
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  outline-color: #3f51b5;
+}
+
+.button-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button-action {
+  padding: 0.6rem 1.2rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
 }
 
 .button-action:hover {
-  background-color: #0056b3;
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #cfd8dc;
 }
 
-.button-action:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+.button-action.primary {
+  background-color: #3f51b5;
+  color: #fff;
 }
 
-.button-action:active {
-  background-color: #004085;
-  transform: translateY(1px);
+.button-action.primary:hover {
+  background-color: #303f9f;
 }
 
 .feedback {
-  margin-top: 20px;
   font-weight: bold;
-  font-size: 1.1rem;
-  text-align: center;
+  margin-top: 1rem;
 }
 
-.correto {
-  color: green;
+.feedback.correto {
+  color: #2e7d32;
 }
 
-.incorreto {
-  color: red;
+.feedback.incorreto {
+  color: #d32f2f;
 }
 
 .resposta-correta {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
 }
-

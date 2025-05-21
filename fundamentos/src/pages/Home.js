@@ -25,23 +25,45 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="home-container">
+    <div className="home-container rgb-background">
+      
+      {/* 1. Título + Intro */}
       <section className="intro-section">
         <h1 className="home-title">Fundamentos da Programação</h1>
         <p className="home-description">
           Este projeto foi criado para te guiar pelos conceitos essenciais da programação de forma simples, visual e acessível.
-        </p>
-        <p className="home-description">
-          Aqui você vai aprender desde os princípios básicos — como variáveis, tipos de dados e operadores — até conceitos fundamentais como estruturas de repetição, funções e orientação a objetos.
-        </p>
-        <p className="home-extra">
-          Nossa missão é tornar a programação mais intuitiva e interessante para quem está começando, usando uma abordagem amigável e centrada na experiência do usuário.
         </p>
         <button className="study-button" onClick={() => navigate('/fundamentos')}>
           Explorar Fundamentos de JavaScript
         </button>
       </section>
 
+      {/* 2. Explicação do Projeto */}
+      <section className="project-section">
+        <h2 className="home-subtitle">Sobre o Projeto</h2>
+        <p className="home-description">
+          Este projeto oferece uma jornada interativa e prática através dos conceitos fundamentais da programação. 
+          Ideal para iniciantes, ele combina explicações claras com exemplos visuais e exercícios interativos.
+        </p>
+        <p className="home-description">
+          Desde variáveis até orientação a objetos, você aprenderá de forma progressiva e divertida.
+        </p>
+      </section>
+
+      {/* 3. Vídeo da Equipe */}
+      <section className="video-section">
+        <h2 className="home-subtitle">Conheça o projeto em vídeo</h2>
+        <div className="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" 
+            title="Apresentação do Projeto"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
+      {/* 4. Equipe */}
       <section className="dev-section">
         <h2 className="home-subtitle">Quem desenvolveu</h2>
         <div className="dev-list">
@@ -55,6 +77,15 @@ const Home = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* 5. Encerramento / Call to Action */}
+      <section className="cta-section">
+        <h2 className="home-subtitle">Pronto para aprender na prática?</h2>
+        <p className="home-description">Clique no botão abaixo e comece sua jornada agora mesmo!</p>
+        <button className="study-button" onClick={() => navigate('/fundamentos')}>
+          Começar a Aprender
+        </button>
       </section>
     </div>
   );
