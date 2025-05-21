@@ -1,91 +1,114 @@
+/* Transição RGB no fundo */
+.rgb-background {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: rgbFlow 15s ease infinite;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #222;
+}
 .home-container {
-  padding: 40px 20px;
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que ocupe no mínimo a altura total da tela */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@keyframes rgbFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px; /* aumenta o tamanho máximo */
   margin: 0 auto;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
+  padding-bottom: 56.25%; /* proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.intro-section {
-  text-align: center;
-  margin-bottom: 50px;
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
+
+/* Títulos e seções */
 .home-title {
   font-size: 2.5rem;
-  color: #111;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
 }
 
 .home-description, .home-extra {
   font-size: 1.1rem;
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .study-button {
-  margin-top: 25px;
-  background-color: #007bff;
+  background-color: #3f51b5;
   color: white;
-  padding: 12px 24px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 1.5rem auto;
+  transition: background 0.3s;
 }
 
 .study-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
+  background-color: #303f9f;
 }
 
 .dev-section {
-  margin-top: 60px;
-}
-
-.home-subtitle {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #222;
+  padding: 2rem 0;
 }
 
 .dev-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .dev-card {
-  background: #f9f9f9;
+  background: white;
   border-radius: 12px;
-  padding: 20px;
-  width: 220px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease;
-}
-
-.dev-card:hover {
-  transform: translateY(-5px);
+  width: 200px;
 }
 
 .dev-avatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  object-fit: cover;
 }
 
-.dev-info h3 {
-  margin: 5px 0;
-  font-size: 1.1rem;
-}
-
-.dev-info p {
-  font-size: 0.95rem;
-  color: #666;
+.cta-section {
+  text-align: center;
+  padding: 2rem 1rem;
 }
