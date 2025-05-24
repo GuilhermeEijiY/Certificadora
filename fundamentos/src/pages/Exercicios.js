@@ -95,21 +95,22 @@ const Exercicios = () => {
   const verificarResposta = () => {
     const correto = atual.validar(resposta);
     if (correto) {
-      setFeedback('✅ Correto! Avançando...');
+      setFeedback('✅ Correto!');
       setAcertou(true);
       setEstatisticas(prev => ({ ...prev, corretas: prev.corretas + 1 }));
-      setTimeout(() => {
-        setIndice(prev => prev + 1);
-        setResposta('');
-        setFeedback('');
-        setAcertou(null);
-        setMostrarResposta(false);
-      }, 1200);
     } else {
-      setFeedback('❌ Incorreto. Tente novamente!');
+      setFeedback(`❌ Incorreto. Resposta correta: ${atual.respostaCorreta}`);
       setAcertou(false);
       setEstatisticas(prev => ({ ...prev, incorretas: prev.incorretas + 1 }));
     }
+
+    setTimeout(() => {
+      setIndice(prev => (prev + 1) % perguntas.length);
+      setResposta('');
+      setFeedback('');
+      setAcertou(null);
+      setMostrarResposta(false);
+    }, 1500);
   };
 
   const verRespostaCorreta = () => {
@@ -131,10 +132,22 @@ const Exercicios = () => {
     setMostrarResposta(false);
   };
 
+  const recomeçar = () => {
+    setIndice(0);
+    setResposta('');
+    setFeedback('');
+    setAcertou(null);
+    setMostrarResposta(false);
+    setEstatisticas({ corretas: 0, incorretas: 0 });
+  };
+
   const dadosGrafico = [
     { name: 'Corretas', value: estatisticas.corretas },
     { name: 'Incorretas', value: estatisticas.incorretas },
   ];
+
+  const total = estatisticas.corretas + estatisticas.incorretas;
+  const porcentagem = total > 0 ? Math.round((estatisticas.corretas / total) * 100) : 0;
 
   const cores = ['#4caf50', '#f44336'];
 
@@ -163,6 +176,8 @@ const Exercicios = () => {
             <Legend />
           </PieChart>
         </ResponsiveContainer>
+        <p className="porcentagem">🎯 Porcentagem de acertos: {porcentagem}%</p>
+        
       </div>
 
       <div className="card">
@@ -193,6 +208,9 @@ const Exercicios = () => {
           </div>
         )}
       </div>
+      <div className="btn-container">
+      <button onClick={recomeçar} className="btn reset">🔄 Recomeçar Exercícios</button>
+    </div>
     </div>
   );
 };
