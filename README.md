@@ -48,6 +48,8 @@ O projeto visa tornar o aprendizado mais envolvente e acessível, transformando 
 
    ```bash
    npm install
+   npm install recharts
+
    ```
 
 4. **Execute o projeto:**
