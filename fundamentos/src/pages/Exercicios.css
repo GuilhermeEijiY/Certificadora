@@ -1,14 +1,21 @@
+/* Exercicios.css */
+body {
+  background-color: #f8f9fa;
+}
+
 .ex-container {
-  max-width: 700px;
+  max-width: 640px;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
+  color: #2c3e50;
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
 }
 
 .intro-text {
@@ -19,68 +26,87 @@ h1 {
 
 .card {
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
   padding: 2rem;
   margin-top: 1rem;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #34495e;
 }
 
 .pergunta {
   font-size: 1.1rem;
   margin: 1rem 0;
-  color: #222;
+  color: #333;
 }
 
 .resposta-input {
   padding: 0.75rem;
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   outline-color: #3f51b5;
 }
 
-.button-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1.2rem;
-}
-
-.btn-row {
+.button-group,
+.nav-group {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
-.button-action {
+.btn {
   padding: 0.6rem 1.2rem;
-  background-color: #e0e0e0;
+  font-size: 1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
-.button-action:hover {
-  background-color: #cfd8dc;
-}
-
-.button-action.primary {
+.btn.primary {
   background-color: #3f51b5;
-  color: #fff;
+  color: white;
 }
 
-.button-action.primary:hover {
+.btn.primary:hover {
   background-color: #303f9f;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #3f51b5;
+  color: #3f51b5;
+}
+
+.btn.outline:hover {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.btn:not(.primary):not(.outline) {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn:not(.primary):not(.outline):hover {
+  background-color: #d5d5d5;
 }
 
 .feedback {
   font-weight: bold;
   margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .feedback.correto {
@@ -88,11 +114,9 @@ h1 {
 }
 
 .feedback.incorreto {
-  color: #d32f2f;
+  color: #c62828;
 }
-
-.resposta-correta {
-  margin-top: 0.5rem;
-  font-style: italic;
-  color: #555;
+.grafico-container {
+  margin: 2rem auto;
+  max-width: 300px;
 }
