@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Fundamentos from './pages/Fundamentos';
 import Exercicios from './pages/Exercicios';
+import Desafios from './pages/Desafios';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
             <Route path='/Fundamentos' element={<Fundamentos/>}/>
             <Route path='/Exercicios' element={<Exercicios/>}/>
+            <Route path='/Desafios' element={<Desafios/>}/>
         </Routes>
           <Footer />
       </BrowserRouter>
