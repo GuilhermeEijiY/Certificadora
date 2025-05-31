@@ -14,8 +14,49 @@ const desafios = [
     enunciado: `Crie uma função que imprima os números de 1 a 5 usando um laço for.`,
     verificar: (log) => log.includes("1") && log.includes("5"),
     sugestao: `for (let i = 1; i <= 5; i++) {\n  console.log(i);\n}`
+  },
+  {
+    enunciado: `Escreva uma função que receba dois números e imprima a soma deles.`,
+    verificar: (log) => log.includes("7") || log.includes("12"),
+    sugestao: `function somar(a, b) {\n  console.log(a + b);\n}\nsomar(3, 4);`
+  },
+  {
+    enunciado: `Crie uma função que receba um número e imprima "Par" se ele for par, ou "Ímpar" se for ímpar.`,
+    verificar: (log) => log.toLowerCase().includes("par") || log.toLowerCase().includes("ímpar"),
+    sugestao: `function verificarPar(n) {\n  if (n % 2 === 0) {\n    console.log("Par");\n  } else {\n    console.log("Ímpar");\n  }\n}\nverificarPar(7);`
+  },
+  {
+    enunciado: `Use um loop para imprimir os números pares de 2 até 10.`,
+    verificar: (log) => log.includes("2") && log.includes("10") && log.includes("6"),
+    sugestao: `for (let i = 2; i <= 10; i += 2) {\n  console.log(i);\n}`
+  },
+  {
+    enunciado: `Crie uma função que imprima "Olá, nome!" onde "nome" é um parâmetro da função.`,
+    verificar: (log) => log.toLowerCase().includes("olá") && log.includes("joão"),
+    sugestao: `function cumprimentar(nome) {\n  console.log("Olá, " + nome + "!");\n}\ncumprimentar("João");`
+  },
+  {
+    enunciado: `Imprima a tabuada do 3 (de 3x1 até 3x5).`,
+    verificar: (log) => log.includes("3") && log.includes("15"),
+    sugestao: `for (let i = 1; i <= 5; i++) {\n  console.log("3 x " + i + " = " + (3 * i));\n}`
+  },
+  {
+    enunciado: `Crie uma função que receba um array de nomes e imprima cada um deles.`,
+    verificar: (log) => log.includes("Maria") && log.includes("José"),
+    sugestao: `function imprimirNomes(nomes) {\n  for (let nome of nomes) {\n    console.log(nome);\n  }\n}\nimprimirNomes(["Maria", "José", "Ana"]);`
+  },
+  {
+    enunciado: `Escreva uma função que conte de 10 até 1 (decrescente).`,
+    verificar: (log) => log.includes("10") && log.includes("1"),
+    sugestao: `for (let i = 10; i >= 1; i--) {\n  console.log(i);\n}`
+  },
+  {
+    enunciado: `Crie uma função que receba uma nota e imprima "Aprovado" se for maior ou igual a 6, senão "Reprovado".`,
+    verificar: (log) => log.toLowerCase().includes("aprovado") || log.toLowerCase().includes("reprovado"),
+    sugestao: `function verificarNota(nota) {\n  if (nota >= 6) {\n    console.log("Aprovado");\n  } else {\n    console.log("Reprovado");\n  }\n}\nverificarNota(7);`
   }
 ];
+
 
 const cores = ['#4caf50', '#f44336'];
 
