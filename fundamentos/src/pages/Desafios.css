@@ -11,7 +11,7 @@
 }
 
 .desafio-enunciado {
-  background-color: #f3f4f6;
+  background-color: #f3f4f69f;
   padding: 1rem;
   border-radius: 0.375rem;
   margin-bottom: 1rem;
@@ -53,7 +53,7 @@
 }
 
 .resposta-input {
-  min-height: 200px;
+  min-height: 120px;
   resize: vertical;
   font-family: monospace;
   font-size: 1rem;
@@ -63,4 +63,3 @@
   border-radius: 8px;
   box-sizing: border-box;
 }
-

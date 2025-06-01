@@ -166,7 +166,7 @@ function Desafios() {
 
       <div className="card">
         <h2>Desafio {indice + 1} de {desafios.length}</h2>
-        <pre className="pergunta">{atual.enunciado}</pre>
+        <pre className="desafio-enunciado">{atual.enunciado}</pre>
 
         <textarea
           className="resposta-input"
