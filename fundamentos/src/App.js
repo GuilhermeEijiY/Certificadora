@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Fundamentos from './pages/Fundamentos';
 import Exercicios from './pages/Exercicios';
 import Desafios from './pages/Desafios';
+import SimuladorPassoAPasso from './pages/SimuladorPassoAPasso';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/Fundamentos' element={<Fundamentos/>}/>
             <Route path='/Exercicios' element={<Exercicios/>}/>
             <Route path='/Desafios' element={<Desafios/>}/>
+            <Route path='/SimuladorPassoAPasso' element={<SimuladorPassoAPasso/>}/>
         </Routes>
           <Footer />
       </BrowserRouter>
