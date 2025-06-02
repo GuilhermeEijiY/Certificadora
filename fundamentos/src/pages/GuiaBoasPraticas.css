@@ -1,0 +1,187 @@
+/* GuiaBoasPraticas.css */
+
+/* Importação de fontes - mantenha no topo do arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* Variáveis CSS para um tema mais vibrante e coeso */
+:root {
+  --primary-color: #007bff; /* Azul vibrante principal */
+  --secondary-color: #6c757d; /* Cinza para textos secundários */
+  --accent-color: #28a745; /* Verde de destaque para sucesso */
+  --danger-color: #dc3545; /* Vermelho para erro */
+
+  --bg-body: #f8f9fa; /* Fundo geral da página, mais claro */
+  --bg-card: #ffffff; /* Fundo dos cards, branco puro */
+  --bg-code-bad: #fff0f0; /* Fundo para código "ruim", sutilmente vermelho */
+  --bg-code-good: #e6ffe6; /* Fundo para código "bom", sutilmente verde */
+
+  --text-primary: #212529; /* Texto principal, quase preto */
+  --text-secondary: #495057; /* Texto secundário */
+  --text-light: #f8f9fa; /* Texto para fundos escuros */
+
+  --border-color: #dee2e6; /* Borda padrão */
+  --shadow-level-1: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para cards */
+  --shadow-level-2: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra mais intensa no hover */
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65; /* Aumentado para melhor legibilidade */
+  color: var(--text-secondary); /* Cor de texto mais suave por padrão */
+  background-color: var(--bg-body);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.guia-container {
+  max-width: 1024px; /* Aumentei um pouco o max-width para 1024px, equivalente a max-w-5xl do Tailwind */
+  margin: 3rem auto; /* Mais espaçamento superior/inferior */
+  padding: 1.5rem; /* Mais padding interno */
+  box-sizing: border-box; /* Garante que padding não adicione largura */
+}
+
+/* Título principal */
+.guia-container h1 {
+  font-size: 3rem; /* Aumentei para um impacto maior */
+  font-weight: 800; /* Mais bold */
+  text-align: center;
+  margin-bottom: 2rem; /* Mais espaço abaixo */
+  color: var(--text-primary); /* Cor mais escura para o título */
+  position: relative;
+  padding-bottom: 1rem; /* Espaço para a linha */
+  letter-spacing: -0.05em; /* Ajuste para parecer mais moderno */
+}
+
+.guia-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px; /* Linha mais longa */
+  height: 5px; /* Linha mais grossa */
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3); /* Sombra para a linha */
+}
+
+/* Parágrafo de introdução */
+.intro-text {
+  color: var(--text-secondary);
+  margin-bottom: 3rem; /* Mais espaço abaixo */
+  text-align: center;
+  font-size: 1.2rem; /* Um pouco maior */
+  max-width: 700px; /* Limitar a largura para melhor legibilidade */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card de cada dica */
+.dica-card {
+  background-color: var(--bg-card);
+  border-radius: 12px; /* Mais arredondado */
+  box-shadow: var(--shadow-level-1); /* Sombra inicial */
+  padding: 2rem; /* Mais padding interno */
+  margin-bottom: 2rem; /* Mais espaço entre cards */
+  border-left: 6px solid var(--primary-color); /* Borda lateral mais pronunciada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.dica-card:hover {
+  transform: translateY(-8px); /* Efeito de "levantar" */
+  box-shadow: var(--shadow-level-2); /* Sombra mais forte no hover */
+}
+
+/* Título da dica */
+.dica-card h2 {
+  font-size: 1.6rem; /* Aumentado */
+  font-weight: 700; /* Mais bold */
+  margin-bottom: 0.75rem; /* Mais espaço */
+  color: var(--text-primary); /* Cor mais escura */
+  display: flex; /* Para alinhar ícone se fosse o caso */
+  align-items: center;
+}
+
+/* Explicação da dica */
+.dica-card .explicacao-text {
+  font-size: 1rem; /* Um pouco maior */
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem; /* Mais espaço */
+  line-height: 1.7; /* Mais espaço entre linhas */
+}
+
+/* Grid para exemplos de código */
+.code-examples-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* Aumentei o gap */
+  font-size: 0.95rem; /* Levemente maior */
+}
+
+/* Para telas médias e maiores, 2 colunas */
+@media (min-width: 768px) {
+  .code-examples-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Títulos "Ruim" e "Melhor" */
+.code-examples-grid p.status-bad,
+.code-examples-grid p.status-good {
+  font-weight: 700; /* Mais bold */
+  margin-bottom: 0.75rem; /* Mais espaço */
+  font-size: 1rem;
+}
+
+.code-examples-grid p.status-bad {
+  color: var(--danger-color);
+}
+
+.code-examples-grid p.status-good {
+  color: var(--accent-color);
+}
+
+/* Blocos de código */
+.code-block {
+  padding: 1rem; /* Mais padding */
+  border-radius: 8px; /* Mais arredondado */
+  white-space: pre-wrap;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85rem; /* Um pouco maior */
+  line-height: 1.5;
+  border: 1px solid var(--border-color); /* Adiciona uma borda sutil */
+}
+
+/* Ajuste de fonte para telas pequenas */
+@media (min-width: 640px) {
+  .code-block {
+    font-size: 0.9rem;
+  }
+}
+
+.code-block.bad-example {
+  background-color: var(--bg-code-bad);
+  color: var(--text-primary);
+}
+
+.code-block.good-example {
+  background-color: var(--bg-code-good);
+  color: var(--text-primary);
+}
+
+/* Melhorias gerais de tipografia e espaçamento */
+p {
+  margin-bottom: 1em; /* Espaçamento padrão para parágrafos */
+}
+
+ul {
+  list-style: none; /* Remover bullet padrão */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}

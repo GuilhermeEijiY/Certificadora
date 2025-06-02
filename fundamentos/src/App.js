@@ -13,6 +13,7 @@ import Fundamentos from './pages/Fundamentos';
 import Exercicios from './pages/Exercicios';
 import Desafios from './pages/Desafios';
 import SimuladorPassoAPasso from './pages/SimuladorPassoAPasso';
+import GuiaBoasPraticas from './pages/GuiaBoasPraticas';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='/Exercicios' element={<Exercicios/>}/>
             <Route path='/Desafios' element={<Desafios/>}/>
             <Route path='/SimuladorPassoAPasso' element={<SimuladorPassoAPasso/>}/>
+            <Route path='/GuiaBoasPraticas' element={<GuiaBoasPraticas/>}/>
         </Routes>
           <Footer />
       </BrowserRouter>

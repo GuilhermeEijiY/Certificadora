@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import './Fundamentos.css';
 
 const Fundamentos = () => {
@@ -14,8 +14,11 @@ const Fundamentos = () => {
         <p className="mb-4 text-gray-700">
           Sua natureza assíncrona e de thread único, gerenciada através do Event Loop, é um pilar fundamental para operações não bloqueantes, essenciais em ambientes de E/S intensiva.
         </p>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Aprofundar em JavaScript
+        </a>
+        <a href="https://youtu.be/MWVzdbIJW4A" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -30,7 +33,7 @@ const Fundamentos = () => {
           <li className="mb-2"><code><strong>const</strong></code>: Também introduzido no ES6, declara uma constante com escopo de bloco. Assim como <code>let</code>, possui TDZ. Uma vez atribuída, seu valor não pode ser reatribuído. Para tipos primitivos, isso significa imutabilidade do valor. Para objetos e arrays, significa que a <em>referência</em> ao objeto/array é imutável, mas as propriedades internas do objeto ou os elementos do array podem ser modificados.</li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`var nome = "João";
+          {`var nome = "João";
 let idade = 25;
 const PI = 3.14159;
 
@@ -43,8 +46,11 @@ pessoa.nome = "Ana";`}
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/let" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Detalhes sobre let
         </a>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/const" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/const" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Detalhes sobre const
+        </a>
+        <a href="https://youtu.be/OYeJQR1Uhug" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -67,15 +73,18 @@ pessoa.nome = "Ana";`}
           </li>
           <li className="mb-2"><strong>Tipo Objeto:</strong> Representa coleções de dados mais complexas e são mutáveis.
             <ul className="list-circle list-inside ml-4">
-              <li><code><strong>Object</strong></code>: Estruturas de dados com pares chave-valor, e.g., <code>&#123; nome: "Alice", idade: 30 &#125;</code>.</li>
+              <li><code><strong>Object</strong></code>: Estruturas de dados com pares chave-valor, e.g., <code>{`{ nome: "Alice", idade: 30 }`}</code>.</li>
               <li><code><strong>Array</strong></code>: Objetos especiais para armazenar coleções ordenadas de valores, e.g., <code>[1, "dois", true]</code>.</li>
               <li><code><strong>Function</strong></code>: Objetos que podem ser invocados. Em JavaScript, funções são cidadãos de primeira classe.</li>
               <li>Outros objetos built-in como <code>Date</code>, <code>RegExp</code>, <code>Map</code>, <code>Set</code>, etc.</li>
             </ul>
           </li>
         </ul>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Explorar Tipos de Dados
+        </a>
+        <a href="https://youtu.be/bCxdLpR3HC4" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -116,8 +125,11 @@ pessoa.nome = "Ana";`}
           </li>
           <li className="mb-2"><strong>Ternário (Condicional):</strong> <code>condição ? valorSeVerdadeiro : valorSeFalso</code>. Uma forma concisa de condicional.</li>
         </ul>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Documentação de Operadores
+        </a>
+        <a href="https://youtu.be/6GGLNp7oaKU" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -131,7 +143,7 @@ pessoa.nome = "Ana";`}
           <li className="mb-2"><code><strong>switch</strong></code>: Avalia uma expressão e tenta corresponder seu valor a uma série de cláusulas <code>case</code>. É útil para múltiplos caminhos de execução baseados em um único valor. A cláusula <code>break</code> é crucial para evitar "fall-through".</li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`const idade = 20;
+          {`const idade = 20;
 if (idade >= 18) {
   console.log("Maior de idade.");
 } else if (idade >= 13) {
@@ -155,8 +167,11 @@ switch (diaDaSemana) {
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           if...else
         </a>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/switch" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/switch" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           switch
+        </a>
+        <a href="https://youtu.be/QEaGKrx0yCo" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -174,7 +189,7 @@ switch (diaDaSemana) {
           <li className="mb-2"><strong>Métodos de Iteração de Array:</strong> Métodos de array de alta ordem como <code>forEach()</code>, <code>map()</code>, <code>filter()</code>, <code>reduce()</code> oferecem formas mais funcionais e expressivas de iterar e transformar arrays.</li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`// for clássico
+          {`// for clássico
 for (let i = 0; i < 3; i++) {
   console.log("For:", i);
 }
@@ -213,8 +228,11 @@ console.log("Dobrados:", dobrados);`}
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           while
         </a>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           for...of
+        </a>
+        <a href="https://youtu.be/IR92Bx3vcNw" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -237,7 +255,7 @@ console.log("Dobrados:", dobrados);`}
           <li className="mb-2"><strong>Recursão:</strong> Uma função que chama a si mesma para resolver um problema, dividindo-o em subproblemas menores.</li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`// Declaração de função
+          {`// Declaração de função
 function saudacao(nome) {
   return "Olá, " + nome + "!";
 }
@@ -262,8 +280,11 @@ console.log(meuContador()); // 2`}
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Funções
         </a>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Closures" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Closures" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Closures
+        </a>
+        <a href="https://youtu.be/yf0IeSEIly4" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -303,7 +324,7 @@ console.log(meuContador()); // 2`}
           </li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`// Seleciona um elemento
+          {`// Seleciona um elemento
 const meuParagrafo = document.getElementById("meuParagrafo");
 
 if (meuParagrafo) {
@@ -316,8 +337,11 @@ const novoDiv = document.createElement("div");
 novoDiv.textContent = "Novo elemento dinâmico!";
 document.body.appendChild(novoDiv);`}
         </pre>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Documentação do DOM
+        </a>
+        <a href="https://youtu.be/9E8BftO0IBk" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
 
@@ -340,7 +364,7 @@ document.body.appendChild(novoDiv);`}
           <li className="mb-2"><strong>O Event Loop:</strong> JavaScript é single-threaded, mas o Event Loop permite que ele lide com operações assíncronas (como eventos, requisições de rede, timers) sem bloquear a thread principal. Ele constantemente verifica a Call Stack e a Callback Queue, movendo funções da fila para a pilha quando a pilha está vazia.</li>
         </ul>
         <pre className="bg-gray-100 p-4 rounded-md text-sm overflow-x-auto mb-4">
-{`const meuBotao = document.getElementById("meuBotao");
+          {`const meuBotao = document.getElementById("meuBotao");
 
 if (meuBotao) {
   meuBotao.addEventListener("click", function(event) {
@@ -360,8 +384,11 @@ if (lista) {
         <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventTarget/addEventListener" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           addEventListener
         </a>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 mr-2">
           Event Loop
+        </a>
+        <a href="https://youtu.be/mBoSt55UO_U" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+          Vídeo Explicativo
         </a>
       </section>
     </div>

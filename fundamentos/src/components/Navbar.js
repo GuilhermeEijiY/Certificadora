@@ -20,6 +20,9 @@ const Navbar = () => {
         <NavLink to="/simuladorPassoAPasso" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
           Simulador de código
         </NavLink>
+        <NavLink to="/GuiaBoasPraticas" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+          Dicas de Programação
+        </NavLink>
       </div>
     </nav>
   );
