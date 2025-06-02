@@ -52,7 +52,7 @@ const Home = () => {
         <h2 className="home-subtitle">Conheça o projeto em vídeo</h2>
         <div className="video-wrapper">
           <iframe 
-            src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" 
+            src="https://www.youtube.com/embed/f8mv4UbHJM4?si=Cl5M7efk6hP9d0uC" 
             title="Apresentação do Projeto"
             frameBorder="0"
             allowFullScreen

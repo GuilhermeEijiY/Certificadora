@@ -88,24 +88,38 @@ function Desafios() {
         setFeedback("✅ Correto!");
         setAcertou(true);
         setEstatisticas(prev => ({ ...prev, corretas: prev.corretas + 1 }));
+        // Adiciona um delay antes de ir para a próxima questão
+        setTimeout(() => {
+          pularDesafio();
+        }, 1000); // 1 segundo de delay
       } else {
         setFeedback("❌ Saída inesperada. Tente ajustar sua lógica.");
         setAcertou(false);
         setEstatisticas(prev => ({ ...prev, incorretas: prev.incorretas + 1 }));
+        // Adiciona um delay antes de ir para a próxima questão
+        setTimeout(() => {
+          pularDesafio();
+        }, 1000); // 1 segundo de delay
       }
     } catch (error) {
       setResultado("Erro ao executar o código:\n" + error.message);
       setFeedback("❌ Erro no código. Confira sua sintaxe.");
       setAcertou(false);
       setEstatisticas(prev => ({ ...prev, incorretas: prev.incorretas + 1 }));
+      // Adiciona um delay antes de ir para a próxima questão mesmo em caso de erro
+      setTimeout(() => {
+        pularDesafio();
+      }, 1000); // 1 segundo de delay
     }
   }
 
   const pularDesafio = () => {
+    // Certifica-se de que o feedback seja limpo antes de pular
+    setFeedback(""); 
+    setAcertou(null); // Limpa o estado de acerto/erro
     setIndice((prev) => (prev + 1) % desafios.length);
     setResposta("");
     setResultado(null);
-    setFeedback("");
     setMostrarSolucao(false);
   };
 

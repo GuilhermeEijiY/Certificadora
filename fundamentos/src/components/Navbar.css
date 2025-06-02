@@ -1,12 +1,24 @@
-/* Reset básico */
+/* src/components/Navbar.css */
+
 .navbar {
-  background: #ffffffcc; /* branco com leve transparência */
+  background: #ffffffcc;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 0.75rem 2rem;
+  /* Ajuste o padding vertical se necessário, mas 0.75rem é um bom ponto de partida */
+  padding: 0.75rem 2rem; 
   position: sticky;
   top: 0;
   z-index: 1000;
+  
+  display: flex;
+  align-items: center; /* Centraliza itens verticalmente */
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* **Aumente esta altura mínima do navbar para acomodar uma logo maior, mas não demais** */
+  /* Comece com 80px e ajuste conforme a logo. Pode ser 90px, 100px. */
+  min-height: 80px; 
 }
 
 .nav-container {
@@ -14,6 +26,9 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: fit-content;
 }
 
 .nav-link {
