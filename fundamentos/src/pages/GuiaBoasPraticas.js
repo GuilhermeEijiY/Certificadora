@@ -1,5 +1,5 @@
 import React from 'react';
-import './GuiaBoasPraticas.css'; // Importa o arquivo CSS
+import './GuiaBoasPraticas.css'; 
 
 const dicas = [
   {
