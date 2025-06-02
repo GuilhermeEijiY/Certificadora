@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Certificadora/static/css/main.1faad2f1.css",
-    "main.js": "/Certificadora/static/js/main.bb90908a.js",
+    "main.js": "/Certificadora/static/js/main.31e15523.js",
     "static/js/453.624bc112.chunk.js": "/Certificadora/static/js/453.624bc112.chunk.js",
     "static/media/default-avatar.png": "/Certificadora/static/media/default-avatar.a6a852e99f4cfe66ad2f.png",
     "index.html": "/Certificadora/index.html",
     "main.1faad2f1.css.map": "/Certificadora/static/css/main.1faad2f1.css.map",
-    "main.bb90908a.js.map": "/Certificadora/static/js/main.bb90908a.js.map",
+    "main.31e15523.js.map": "/Certificadora/static/js/main.31e15523.js.map",
     "453.624bc112.chunk.js.map": "/Certificadora/static/js/453.624bc112.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1faad2f1.css",
-    "static/js/main.bb90908a.js"
+    "static/js/main.31e15523.js"
   ]
 }
